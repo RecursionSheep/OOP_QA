@@ -26,21 +26,20 @@ int main(int argc, char** argv)
 #### 2. Please list（列举）the potential advantages and disadvantages of obtaining arguments by file reading vs. by command-line argument.
 
 - Advantage of file reading:
-  1) File reading can be used in programs with a GUI.
-  2) Files can be copied and modified easily.
-  3) Files can provide a larger size of arguments.
-  4) When reading large amounts of arguments(>= 10000), file reading are faster than command-line argument.
-  5) Files can be saved, thus provide an easier way to analyse data. 
+  - File reading can be used in programs with a GUI.
+  - Files can be copied and modified easily.
+  - Files can provide a larger size of arguments.
+  - When reading large amounts of arguments(>= 10000), file reading is more convenient than command-line argument.
+  - Files can be saved, thus provide an easier way to analyse data. 
 - Disadvantage of file reading:
-  1) File IO is more complex and slower than command arguments with exceptions to handle.
-  2) Conventions(e.g. “`a.out`”) are required without command argument.
-  3) Not easy to know argument amounts.
+  - File IO is more complex and slower than command arguments with exceptions to handle.
+  - Not easy to know argument amounts.
 - Advantage of command-line argument:
   - Makes the program easier to be called in command-line.
   - Makes the program callable in batch scripts for tasks like parameter sweeping (参数扫描, 以不同的参数运行同一个程序).
 - Diadvantage of command-line argument:
   - Unable to handle large number of arguments.
-  - Takes efforts to parsing data from `argc` and `argv`.
+  - Takes efforts to parse data from `argc` and `argv`.
 
 #### 3. How do you input a command-line argument with spaces in it? For example, how can we input ‘Hello World’ as a single argument?
 
